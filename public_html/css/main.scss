@@ -1,0 +1,534 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+$font-family : 'Open Sans', Calibri, Arial, sans-serif;
+$font-size: 16px;
+
+$black : #000;
+$white : #fff;
+$dark-grey : #333;
+$light-grey : #bbb;
+$teal : #309292;
+
+html {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight:400;
+    color: $dark-grey;
+}
+root { display: block; }
+body { background-color: $dark-grey; }
+header {
+    min-height: 4em;
+    margin: 0 auto;    
+    padding: 0;
+    position: fixed;
+    width:100%;
+    background-color: $dark-grey;
+    z-index: 99;
+    border-bottom:   #03475A 1px solid; 
+}
+nav {
+    min-height: 3em;
+    padding: .5em 0;
+    margin: 0 auto;
+    a { font-weight: 400; }
+    ul { }
+    li {
+        display: block;
+        float: left;
+        margin-left: 0;
+        text-align: left;
+        padding-right: 5%;
+        padding-left: 0;
+        a { text-decoration: none; }
+    }
+}
+
+main {
+    background-color: #fff; //FCF9F2;
+    margin: 0 auto;
+    padding: 5em 0 3em 0;
+    //background-image: url("../img/Bookshelf.jpg");
+            list-style:  circle;
+}
+footer {
+    margin: 1em auto;
+    color: #eee;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+} 
+#web-nav, #link-nav{
+    visibility: visible;
+    display: block;
+}
+#mob-nav{
+    visibility: hidden;
+    display: none;
+    width: 100%;
+}
+#mob-nav-logo {
+    height: 1.5em;
+    padding: 1em 5%;
+    color: #CFB269;
+    
+}
+article {
+
+}
+section {
+
+}
+[class*='container-']{
+    width: 780px;
+    margin: 0 auto;
+}
+.container-full, .container-full-side {
+    padding: 0;
+}
+.container-full-side {
+    //background-color: orange;
+}
+.container-padded {
+    width: 700px;
+    padding: 1em 40px;
+    //background-color: yellow;
+}
+.pic-frame {
+    height:  13.5em;
+    background-size: 100%;
+    background-image: url("../img/h.png");
+    background-repeat: no-repeat;
+    background-position:  center;
+    
+}
+.add-margin {
+    margin: 1em auto;
+    //background-color:  tomato;
+}
+.padded-box {
+    width: 90%;
+    padding: 5%;
+}
+.padding-05m {
+    padding: 1.5em;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-F2 {
+    background-color:#F2ECCE; 
+}
+.bg-CFC69A{
+    background-color: #CFC69A;
+}      
+.bg-D5CFC1{
+    background-color: #D5CFC1;
+}
+.height-3em {
+    min-height: 3em;
+}
+.align-right{
+    text-align: right;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.wrong{
+    color:  #FF0000;
+    font-size: 1em;
+    padding-left: 1em;
+}
+.correct {
+    color: #008000;
+    font-size: 1em;
+    padding-left: 1em;
+}
+.min-height-500{
+    min-height: 500px;
+}
+
+/*------------------------------------------*/
+/*                  GRID                    */
+/*------------------------------------------*/
+.grid {
+    width: 100%;
+    overflow: auto;
+    margin: 0;
+}
+[class*='col-'] {
+  float: left;
+  margin: 0;
+}
+.col-1-1 {
+  width: 100%;
+}
+[class*='col-1-2']  {
+  width: 50%;
+}
+.col-1-2-left {
+
+}
+[class*='col-2-3'] {
+  width: 66.666%;
+}
+[class*='col-1-3'] {
+  width: 28%;
+  padding: 2.666%;
+  text-align: center;
+}
+.col-1-3-mid {
+    padding: 2%;
+    border-bottom: 0;
+    border-right: solid #aaa thin;
+    border-left: solid #aaa thin;
+}
+button.ui-btn, button, .button-container {
+    width: 15em;
+}
+/*------------------------------------------*/
+/*                TYPOGRAPHY                */
+/*------------------------------------------*/
+
+
+.px16 {
+    font-size: 16px;
+}
+.em1 {
+    font-size: 1em;
+}
+
+
+
+p {}
+h1, h2, h3, h4, h5, h6, h7, p, .title {
+    font-family: 'Open Sans',Calibri,Arial,sans-serif;
+    font-weight:400;
+    line-height: 1.5em;
+}
+h1{
+    font-weight:300;
+    color:  #309292;
+    //color: #0099B9;
+    font-size: 2.2em;
+    //text-shadow: 0 0 3px #03475A;
+}
+h2 {
+    //color: #01CCF5;
+        //color:  #556B2F;
+    color: #555;    
+
+} 
+h3 {
+        color: #B00000;
+}
+
+label {
+    font-size: 1.1em;
+    color:  #737373;
+
+}
+
+footer p, header p {
+    color: $light-grey;
+}
+em{
+    font-weight: 700;
+    font-style: normal;
+}
+.highlight {
+    color: #BA8B00;
+}
+.it{
+    font-style: oblique; 
+}
+.large-font{
+    font-size: 1.3em;
+    color: #444;
+    padding-top: 1em;
+}
+
+.large-font2{
+    font-size: 1.7em;
+}
+.title {
+    padding: 0.5em 5%;
+    font-size: 1.2em;
+    color:  #CFB269;
+}
+
+/*------------------------------------------*/
+/*                MISC                      */
+/*------------------------------------------*/
+.formula{
+    border:  #666666 thin solid;
+    //background-color: #F2ECCE; 
+    padding: 0.5em;
+}
+
+.def {
+    border:  #666666 thin solid;
+    padding-right: 3%;
+    padding-left:  3%;
+    //background-color:  #F2ECCE; 
+}
+.example {
+    list-style:  circle;
+}
+.attention {
+    background-color:  #FFD700; //gold
+    //color: #FF0000;
+    padding: 0 .5em;
+    margin-right: .5em;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+    border:  #FF0000  solid 1px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.Helperclasses { 
+/* Prevent callout */
+
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+
+.gifhidden {
+    position: absolute;
+    left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 800px) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: .95em;
+    }
+    header {
+        min-height: 4em;
+        border-bottom: 0; 
+    }
+    
+    main {
+        padding: 5.5em 0 2em 0;
+    }    
+    #web-nav, #link-nav{
+        visibility: hidden;
+        display: none;
+    }
+    #mob-nav{
+        visibility: visible;
+        display: block;
+    }
+    h1 {
+        font-size: 1.8em;
+    }    
+    .container-full {
+        width: 100%;
+    }
+    .container-padded, .container-full-side {
+        width: 90%;
+        padding: 0 5%;
+    }
+    .pic-frame {
+        background-image:  none;
+        display:  none;
+        height: 0;
+    }
+    [class*='col-1-3'], [class*='col-2-3'] {
+      width: 90%;
+      padding: 0 5%;
+    }
+    .col-1-3-mid {
+        border-top: solid #aaa thin;
+        border-bottom: solid  #aaa thin;
+        border-right: 0;
+        border-left: 0;
+    }    
+}
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: .9em;
+    }    
+    [class*='col-'] {
+      width: 90%;
+      padding: 0 5%;
+    }
+    h1 {
+        font-size: 1.4em;
+        font-weight: 400;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    h4, h5, h6 {
+        font-size: 1.1em;
+    }
+    .large-font{
+        font-size: 1.1em;
+    }    
+    .min-height-500{
+        min-height: 350px;
+    }
+    button.ui-btn, button, .button-container {
+        width: 100%;
+    }
+}
+
+
+/*  OVERWRITE DEFAULT JQUERY UI */
+
+.ui-page-theme-a a{ }
+
+#web-nav .ui-link {
+    font-size: 1.1em;
+    color: #F2ECCE;
+    padding-bottom: 5px;
+}
+#web-nav .ui-link:hover{
+    color: #CFB269;
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: #333;
+    border-color: #dddddd;
+    //color: #333333;
+    font-weight: 400;
+    text-shadow:  none;
+}
+
+
+
+.ui-state-disabled {
+    opacity: .65;
+}
+.ui-state-disabled-selected { 
+    opacity: 1;
+}
